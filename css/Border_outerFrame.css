@@ -1,0 +1,43 @@
+:root{
+    --WIDTH: 170px;
+    --HEIGHT: 20px;
+    --padWidht: 5px;
+    --padHeight: 10px;
+}
+
+table{
+    text-align: center;
+    border: 3px solid #126fa5;
+}
+
+td{
+    display: table-cell; /* ブロックレベル要素をtd(th)と同じように表示にする*/
+    border: 1px solid #041016;
+    padding: var(--padHeight) var(--padWidht);
+    width: var(--WIDTH);
+    height: var(--HEIGHT);
+    display:inline-block;
+}
+
+th{
+     display: table-cell; /* ブロックレベル要素をtd(th)と同じように表示にする*/
+    border: 1px solid #041016;
+    padding: var(--padHeight) var(--padWidht);
+    width: var(--WIDTH);
+    height: var(--HEIGHT);
+    display:inline-block;
+}
+
+
+.dtable{
+        display: tabel; /* ブロックレベル要素をtableと同じように表示にする*/
+}
+.dtable_c{
+    display: table-cell; /* ブロックレベル要素をtd(th)と同じように表示にする*/
+    border: 3px solid #46bafd;
+    padding: var(--padHeight) var(--padWidht);
+    width: var(--WIDTH);
+    display:inline-block;
+}
+
+
