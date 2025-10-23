@@ -11,13 +11,10 @@
     border: 3px solid #126fa5;
 }
 
-td,th{
-    display: table-cell; /* ブロックレベル要素をtd(th)と同じように表示にする*/
-    border: 1px solid #041016;
-    padding: var(--padHeight) var(--padWidht);
-    width: var(--WIDTH);
-    height: var(--HEIGHT);
-    display:inline-block;
+th,td {
+    border-style:solid;
+    border-width: black;
+    font-size: 24px;
 }
 
 .dtable{
