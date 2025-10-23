@@ -5,12 +5,13 @@
     --padHeight: 10px;
 }
 
-table{
-    text-align: center;
+
+.dtable_Head{
+     text-align: center;
     border: 3px solid #126fa5;
 }
 
-td{
+td,th{
     display: table-cell; /* ブロックレベル要素をtd(th)と同じように表示にする*/
     border: 1px solid #041016;
     padding: var(--padHeight) var(--padWidht);
@@ -18,16 +19,6 @@ td{
     height: var(--HEIGHT);
     display:inline-block;
 }
-
-th{
-     display: table-cell; /* ブロックレベル要素をtd(th)と同じように表示にする*/
-    border: 1px solid #041016;
-    padding: var(--padHeight) var(--padWidht);
-    width: var(--WIDTH);
-    height: var(--HEIGHT);
-    display:inline-block;
-}
-
 
 .dtable{
         display: tabel; /* ブロックレベル要素をtableと同じように表示にする*/
