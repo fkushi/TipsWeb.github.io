@@ -7,13 +7,13 @@
 
 
 .dtable_Head{
-     text-align: center;
+    text-align: center;
     border: 3px solid #126fa5;
 }
 
 th,td {
     border-style:solid;
-    border-width: black;
+    border-width: thick;
     font-size: 24px;
 }
 
