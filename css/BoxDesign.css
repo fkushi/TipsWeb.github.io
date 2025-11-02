@@ -8,10 +8,6 @@
     border-top: solid 5px #5989cf;
     border-bottom: solid 5px #5989cf;
 }
-.box4 p {
-    margin: 0; 
-    padding: 0;
-}
 
 /*左側にのみ線をつけたもの*/
 .border01{
