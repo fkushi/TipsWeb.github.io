@@ -21,6 +21,12 @@
         <tr>
             <td>altJSとは</td>
         </tr>
+        <tr>
+            <td><a href="#exp03">TypeScriptコーディングに必要なツール</a></td>
+        </tr>
+        <tr>
+            <td><a href="#exp04">連想配列</a></td>
+        </tr>
     </table>
 
     <h2 class="box4">JavaScriptとは</h2>
@@ -35,7 +41,7 @@
         altJSとは、ブラウザで動作するアプリケーション開発の複雑化による<br>
         <font color="#7fffd4">生産性の低下の問題を解決</font>するために作られた新たな言語である。
     </p>
-    <p>
+    <p class="body01">
         altJSはJavaScriptへ変換されることを前提に作成される。
         <br>流れを下記に記す。
         <p class="dtable_c">
@@ -43,4 +49,89 @@
         </p>
         <br>※altJSでは、JavaScriptへの変換をすることを<font color="#7fffd4">コンパイラ</font>と呼んでいる
     </p>
+    <p class="body01">
+        altJSとして、現在筆頭として位置を占めているのがMicrosoftによって作られた<font color="#7fffd4">TypeScript</font>です。
+    </p>
+
+    <h2 class="box4" id="exp03">TypeScriptコーディングに必要なツール</h2>
+    <table class="title" border="2px" bordercolor="#ffffff">
+        <tr>
+            <th>ツール名</th>
+        </tr>
+        <tr>
+            <td>テキストファイル</td>
+        </tr>
+        <tr>
+            <td>Node.js</td>
+        </tr>
+        <tr>
+            <td>npm</td>
+        </tr>
+    </table>
+    <p class="body01">◇テキストエディタ</p>
+    <P class="body01">
+        サクラエディタやNotepad++などのテキストエディタが最適である。<br>
+        VSCodeでもよい。
+    </P>
+    <p class="body01">◇Node.js</p>
+    <p class="body01">
+        ブラウザ上でしか動作しないはずのJavaScriptを<br>ブラウザから独立した環境で動作できるようにしたものである。<br>
+        つまり、ブラウザなしでJavaScriptを実行できるようにしたもの。
+    </p>
+    <P class="body01">◇npm</P>
+    <p class="body01">
+        Node Package Managerの頭文字をとったもの。<br>
+        Node.jsのパッケージ管理システムである。<br>
+        この名称通りのnpmコマンドを利用して、様々なパッケージのインストールや<br>
+        アンインストール、アップデートなどの管理が行える。
+    </p>
+
+    <h2 class="box4" id="exp04">連想配列</h2>
+    <p class="body01">
+        キーと値のペアで一つの要素となる仕組みである。
+        <br>※C++の言語だとmapと同じ処理。
+        <br>連想配列では、要素を管理するためのデータを<font color="#7fffd4">キー</font>、管理されているデータの方を<font color="#7fffd4">値</font>という。
+    </p>
+    <table>
+        <tr>
+            <td>
+                <div class="dtable_c">
+                &lt;構文&gt;<br>
+                const heightList: {[key: string]: number;} = {...}<br><br>
+                <table border="2px" bordercolor="#ffffff">
+                    <tr>
+                        <th>構文</th><th>説明</th>
+                    </tr>
+                    <tr>
+                        <td>heightList</td><td>連想配列変数名</td>
+                    </tr>
+                    <tr>
+                        <td>{}</td><td>連想配列を表す</td>
+                    </tr>
+                    <tr>
+                        <td>key: string</td><td>キーのデータ型</td>
+                    </tr>
+                    <tr>
+                        <td>number</td><td>値のデータ型</td>
+                    </tr>
+                </table>
+                </div>
+            </td>
+            <td>
+                <div class="dtable_c">
+                    &lt;記述例&gt;どの値が誰の伸長かを区別したい場合<br>
+                    const heightList:{[key:&nbsp;string]:&nbsp;number;} = <br>
+                    {<br>
+                        &nbsp;&nbsp;&nbsp;"Tomoko": 155.4,<br>
+                        &nbsp;&nbsp;&nbsp;"Yumi": 162.3,<br>
+                        &nbsp;&nbsp;&nbsp;"Ayaka": 157.9<br>
+                    };<br>
+                    for(const key in heightList){<br>
+                        &nbsp;&nbsp;&nbsp;console.log('${key}さんの身長: ${heightList[key]}');<br>
+                    }
+                </div>
+            </td>
+        </tr>
+    </table>
+   
 </body>
