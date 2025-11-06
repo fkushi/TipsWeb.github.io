@@ -1,3 +1,5 @@
+
+/*ダークカラー背景のサイトを作る際に使用*/
 .title{
     font-size:32px;
 }
@@ -20,4 +22,8 @@ body{
 
 a{
     color:#99FF99;
+}
+
+.charCol_sky{
+    color:#7ffff2;
 }

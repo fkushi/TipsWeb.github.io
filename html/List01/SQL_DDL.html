@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <title>SQL_DDL</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/BoxDesign.css">
+        <link rel="stylesheet" href="../../css/Chara_Design.css">
+        <link rel="stylesheet" href="../../css/Border_outerFrame.css">
+    </head>
+    <body>
+        <h1 class="title02">SQL_DDL</h1>
+        <br>
+        <table class="title" border="2px" bordercolor="white">
+            <tr>
+                <th>目次</th>
+            </tr>
+            <tr>
+                <td>DDLとは</td>
+            </tr>
+            <tr>
+                <td><a href="#制約">制約とは</a></td>
+            </tr>
+        </table>
+
+        <h2 class="border01">DDLとは</h2>
+        <p class="body01">
+            DDL：Data Definition Language
+            オブジェクトの定義に関わるものである。下記がDDL文となる。
+        </p>
+        <table border="2px" bordercolor="deepskyblue" style="font-size: 20px;">
+            <tr>
+                <th>オブジェクト</th><th>DDL</th><th>説明</th>
+            </tr>
+            <tr>
+                <th rowspan="4">表<br><span class="charCol_sky">基本となるオブジェクト</span></th><td>CREATE TABLE</td><td>表を作成する</td>
+            </tr>
+            <tr>
+              <td>ALTER TABLE</td><td>表の定義を変更する</td>
+            </tr>
+            <tr>
+                <td>DROP TABLE</td><td>表を削除する</td>
+            </tr>
+            <tr>
+                <td>TRUNCATE TABLE</td><td>票のすべての行を削除する(切り捨て)</td>
+            </tr>
+            <tr>
+                <th rowspan="3">ビュー<br><span class="charCol_sky">データアクセスを制限する</span></th><td>CREATE VIEW</td><td>ビューを作成する</td>
+            </tr>
+            <tr>
+                <td>ALTER VIEW</td><td>ビューを有効化する。<br>また、ビュー制約を変更する。</td>
+            </tr>
+            <tr>
+                <td>DROP VIEW</td><td>ビューを削除する</td>
+            </tr>
+            <tr>
+                <th rowspan="3">シーケンス(順序)<br><span class="charCol_sky">一意な数値を生成する</span></th><td>CREATE SEQUENCE</td><td>シーケンスの作成</td>
+            </tr>
+            <tr>
+                <td>ALTER SEQUENCE</td><td>シーケンスの属性を変更</td>
+            </tr>
+            <tr>
+                <td>DROP SEQUENCE</td><td>シーケンスの削除</td>
+            </tr>
+            <tr>
+                <th rowspan="3">索引<br><span class="charCol_sky">問合わせの<br>パフォーマンス向上</span></th><td>CREATE INDEX</td><td>索引の作成</td>
+            </tr>
+            <tr>
+                <td>ALTER INDEX</td><td>索引を変更する</td>
+            </tr>
+            <tr>
+                <td>DROP INDEX</td><td>索引を削除する</td>
+            </tr>
+            <tr>
+                <th rowspan="3">シノニム<br><span class="charCol_sky">オブジェクトに<br>別名を指定する。</span></th><td>CREATE SYNONYM</td><td>シノニムを作成する</td>
+            </tr>
+            <tr>
+                <td>ALTER SYNONYM</td><td>シノニムを変更する</td>
+            </tr>
+            <tr>
+                <td>DROP SYNONYM</td><td>シノニムを削除する</td>
+            </tr>
+        </table>
+
+        <h2 class="border01" id="制約">制約とは</h2>
+        <p class="body01">
+            制約(整合性制約)は、票の列に対して設定したルールである。<br>
+            <span class="charCol_sky">ルールに違反</span>するデータが格納されることを<span class="charCol_sky">禁止</span>する。
+        </p>
+        <p class="body01">
+            制約を適切に設定することで、データベースに不適切なデータが格納されることを防ぐ。<br>
+            ※データの内容の整合性を維持できる
+        </p>
+    </body>
+</html>

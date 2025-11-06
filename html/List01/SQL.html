@@ -1,65 +1,71 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="../../css/BoxDesign.css">
-<head>
-    <title>SQL</title>
-    <body>
-        <head>
-            <font size="14">SQL</font>
-        </head>
-         <h3>一覧</h3>
-         <table class="dtable_Head">
-            <tr>
-               <th>SELECT</th><td>データテーブルの格納データを「検索」する</td>
-            </tr>
-            <tr>
-               <th>INSERT INTO～VALUE</th><td>表にデータを「追加」する</td>
-            </tr>
-            <tr>
-               <th>UPDATE～SET</th><td>データテーブルのデータを「変更」する</td>
-            </tr>
-            <tr>
-               <th>タイム・ゾーンや日時を返す関数</th><td><a href="#time01">詳細は下記</a></td>
-            </tr>
-         </table>
+<link rel="stylesheet" href="../../css/Chara_Design.css">
+<html>
+   <head>
+      <title>SQL</title>
+      <font size="14">SQL</font>
+   </head>
+   </head>
+   <body>
+      <h3>一覧</h3>
+      <table class="dtable_Head" border="2px">
+         <tr>
+            <th>SELECT</th><td>データテーブルの格納データを「検索」する</td>
+         </tr>
+         <tr>
+            <th>INSERT INTO～VALUE</th><td>表にデータを「追加」する</td>
+         </tr>
+         <tr>
+            <th>UPDATE～SET</th><td>データテーブルのデータを「変更」する</td>
+         </tr>
+         <tr>
+            <th>タイム・ゾーンや日時を返す関数</th><td><a href="#time01">詳細は下記</a></td>
+         </tr>
+         <tr>
+            <th>DDL</th><td><a href ="./SQL_DDL.html">詳細は別ページを参照</a></td>
+         </tr>
+      </table>
 
-         <br>
+      <br>
+            
+      <h2 class = "border01">SELECT文とは</h2>
+      <p>データテーブルに格納してあるデータを 取得 する際に使用する クエリ(問い合わせ) です。</p>
+      
+      <h2 class = "border01">SELECT文の使い方</h2>
+      <h3>基本構文</h3>
+      <p style="background-color:#0b1c24f1">
+         <font color="#FFFFFF">SELECT カラム名1,カラム名2,カラム名3,... FROM テーブル名</font>
+      </p>
+      <p>データを格納している「テーブル名」と「カラム名」を指定する。</p>
+      
+      <h2 id="time01" class="border01">タイム・ゾーンや日時を返す関数</h2>
+      <table border="2px">
+         <tr>
+            <th>関数</th><th>説明</th>
+         </tr>
+         <tr>
+            <td>DBTIMEZONE</td><td>データベースのタイム・ゾーン</td>
+         </tr>
+         <tr>
+            <td>SESSIONTIMEZONE</td><td>セッションのタイムゾーン</td>
+         </tr>
+         <tr>
+            <td>SYSDATE</td><td>OSの現在の日付・時刻<br>(DATE型の値を返す)</td>
+         </tr>
+         <tr>
+            <td>SYSTIMESTAMP</td><td>OSの現在の日付・時刻<br>(TIMESTAMP WITH TIME ZONE型の値を返す)</td>
+         </tr>
+         <tr>
+            <td>CURRENT_DATE</td><td>セッションのタイム・ゾーンの日付・時刻<br>(DATE型の値を返す)I</td>
+         </tr>
+         <tr>
+            <td>CURRENT_TIMESTAMP</td><td>セッションのタイム・ゾーンの日付・時刻<br>(TIMESTAMP WITH TIME ZONE型の値を返す)</td>
+         </tr>
+         <tr>
+            <td>LOCALTIMESTAMP</td><td>セッションのタイム・ゾーンの日付・時刻<br>(TIMESTAMP型の値を返す)</td>
+         </tr>
+      </table>
+   </body>
+</html>
          
-         <h2 class = "border01">SELECT文とは</h2>
-         <p>データテーブルに格納してあるデータを 取得 する際に使用する クエリ(問い合わせ) です。</p>
-        
-         <h2 class = "border01">SELECT文の使い方</h2>
-         <h3>基本構文</h3>
-         <p style="background-color:#0b1c24f1">
-            <font color="#FFFFFF">SELECT カラム名1,カラム名2,カラム名3,... FROM テーブル名</font>
-         </p>
-         <p>データを格納している「テーブル名」と「カラム名」を指定する。</p>
-         
-         <h2 id="time01" class="border01">タイム・ゾーンや日時を返す関数</h2>
-         <table border="2px">
-            <tr>
-               <th>関数</th><th>説明</th>
-            </tr>
-            <tr>
-               <td>DBTIMEZONE</td><td>データベースのタイム・ゾーン</td>
-            </tr>
-            <tr>
-               <td>SESSIONTIMEZONE</td><td>セッションのタイムゾーン</td>
-            </tr>
-            <tr>
-               <td>SYSDATE</td><td>OSの現在の日付・時刻<br>(DATE型の値を返す)</td>
-            </tr>
-            <tr>
-               <td>SYSTIMESTAMP</td><td>OSの現在の日付・時刻<br>(TIMESTAMP WITH TIME ZONE型の値を返す)</td>
-            </tr>
-            <tr>
-               <td>CURRENT_DATE</td><td>セッションのタイム・ゾーンの日付・時刻<br>(DATE型の値を返す)I</td>
-            </tr>
-            <tr>
-               <td>CURRENT_TIMESTAMP</td><td>セッションのタイム・ゾーンの日付・時刻<br>(TIMESTAMP WITH TIME ZONE型の値を返す)</td>
-            </tr>
-            <tr>
-               <td>LOCALTIMESTAMP</td><td>セッションのタイム・ゾーンの日付・時刻<br>(TIMESTAMP型の値を返す)</td>
-            </tr>
-         </table>
-    </body>
-</head>
